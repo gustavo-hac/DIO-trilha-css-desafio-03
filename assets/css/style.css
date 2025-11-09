@@ -1,9 +1,10 @@
 @import url(./reset.css);
 
 body {
-  width: 100%;
-  /* width: vw; */
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100vh; */
+  width: 100vw;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   background-color: rgb(0, 0, 0);
@@ -12,7 +13,7 @@ body {
 header {
   min-height: 56px;
   max-height: 25%;
-  width: vw;
+  /* width: vw; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,4 +111,40 @@ header .icons_account #avatar_icon{
   height: 34px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main{
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #3b3b3b  0%, #000000 100%);
+}
+
+.sidebar_area{
+  padding: 0px 20px;
+  display: flex;
+  /* background-color: white; */
+  background-color: #3b3b3b;
+}
+
+.sidebar_nav a{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+}
+
+.sidebar_nav div{
+  display: flex;
+  margin: 20px 5px;
+  gap: 20px;
+  align-items: center;
+  span {
+    color: white;
+    text-justify: center;
+  }
+  img {
+    color: white;
+  }
 }
