@@ -11,9 +11,8 @@ body {
 }
 
 header {
-  min-height: 56px;
-  max-height: 25%;
-  /* width: vw; */
+  min-height: 6vh;
+  max-height: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +20,6 @@ header {
   padding-left: 24px;
   box-sizing: border-box;
   background: linear-gradient(to right, #3b3b3b  0%, #000000 50%, #3b3b3b 100%);
-  /* background-color: #3b3b3b; */
   border-radius: 0px 0px 1px 1px;
 
   div {
@@ -115,14 +113,16 @@ header .icons_account #avatar_icon{
 
 main{
   display: flex;
-  width: 100vw;
+  min-width: 100vw;
   height: 100%;
-  flex-wrap: wrap;
   background: linear-gradient(to bottom, #3b3b3b  0%, #000000 100%);
+  /* background: green; */
 }
 
 .sidebar_area{
   padding: 0px 20px;
+  min-height: 100%;
+  height: 94vh;
   display: flex;
   /* background-color: white; */
   background-color: #3b3b3b;
@@ -147,4 +147,55 @@ main{
   img {
     color: white;
   }
+}
+
+.video_section {
+  display: grid;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: max-content;
+  grid-auto-columns: max-content;
+  justify-items: center;
+  align-items: center;
+}
+
+.video_section a{
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  align-items: center;
+}
+
+.video_area {
+  padding: 40px;
+}
+
+.video_area_image {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.video_area_info {
+  display: flex;
+  img {
+    margin-right: 20px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.video_info {
+  padding: 5px 2px 2px 0px;
+  justify-content: center;
+  font-size: 14px;
+  span {
+    display: block;
+  }
+}
+
+.video_info .views {
+  color: #757575;
+  margin-top: 5px;
 }
