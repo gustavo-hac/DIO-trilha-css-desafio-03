@@ -1,0 +1,113 @@
+@import url(./reset.css);
+
+body {
+  width: 100%;
+  /* width: vw; */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+header {
+  min-height: 56px;
+  max-height: 25%;
+  width: vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #3b3b3b  0%, #000000 50%, #3b3b3b 100%);
+  /* background-color: #3b3b3b; */
+  border-radius: 0px 0px 1px 1px;
+
+  div {
+    display: flex;
+    height: 50px;
+  }
+}
+
+header .logo {
+  width: 150px;
+  justify-content: space-between;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  
+  img{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+header .logo #logo_icon{
+  width: 90px;
+  height: 20px;
+}
+
+header .search_bar {
+  width: 400px;
+  height: 40px;
+  justify-content: right;
+  box-sizing: border-box;
+  
+  div {
+    height: 40px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+header .search_bar .search_text_area {
+  width: 100%;
+  height: 100%;
+}
+
+header .search_bar #search_text {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 2px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 15px 0px 0px 15px;
+  outline: none;
+  font-size: 20px;
+  background-color: rgb(83, 83, 83);
+}
+
+header .search_bar .search_text_icon {
+  height: 100%;
+  border-radius: 0px 15px 15px 0px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  background-color: #7a7a7a;
+}
+
+header .search_bar .search_text_icon img {
+  margin: 0px 10px;
+  width: 24px;
+  height: 24px;
+}
+
+header .icons_account {
+  width: 150px;
+  justify-content: space-around;
+  align-items: center;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0);
+  
+  img {
+    height: 24px;
+    width: 24px;
+  }
+ }
+
+header .icons_account #avatar_icon{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
